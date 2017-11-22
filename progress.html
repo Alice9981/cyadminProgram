@@ -5,16 +5,19 @@
 	<link href="css/progress.css" rel="stylesheet" />
 </head>
 <body>
-	  <div class="scroll" id="scroll">
-		    <div class="mask" id="mask">
-		   	 	<div class="bar" id="bar"></div>	
+	<div class="progresscontent">
+	  <div class="barscroll" id="barscroll">
+		    <div class="masktools" id="masktools">
+		   	 	<div class="barbtn" id="barbtn"><div class="baryy1"></div> <div class="baryy2"></div></div>
 		    </div>
-		   	 	<span class="min">50M|</span>
-			    <span class="middle">100M|</span>
-			    <span class="large">200M</span>
+		   	 	<div class="barminval">50M<div class="baryy3"></div></div>
+			    <div class="barmiddleval">100M<div class="baryy3"></div></div>
+		  		<div class="barbigmiddleval">150M<div class="baryy3"></div></div>
+			    <div class="barlargeval">200M</div>
 		</div>
-      <p><div id="protest"  contenteditable="true"></div></p>
-
+	  <input id="progressval" class="alignment" data_edit="true" value="0"/>
+	</div>
+	  <script src="assets/js/jquery.min.js"></script>
       <script src="js/progress.js"></script>
 </body>
 </html> 
